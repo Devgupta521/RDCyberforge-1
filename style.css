@@ -708,7 +708,12 @@ h2 { font-size: clamp(34px, 4.3vw, 52px); line-height: 1.14; margin-bottom: 22px
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 22px;
 }
-
+/* Center Member 5 */
+.core-team-card:nth-child(5) {
+  grid-column: 2 / 4;
+  justify-self: center;
+  width: 50%;
+}
 .core-team-card {
   min-width: 0;
   overflow: hidden;
@@ -820,6 +825,9 @@ h2 { font-size: clamp(34px, 4.3vw, 52px); line-height: 1.14; margin-bottom: 22px
   line-height: 1.8;
 }
 
+
+/* ================= CORE TEAM RESPONSIVE ================= */
+
 /* Tablet */
 @media (max-width: 1050px) {
   .core-team-grid {
@@ -829,6 +837,13 @@ h2 { font-size: clamp(34px, 4.3vw, 52px); line-height: 1.14; margin-bottom: 22px
 
   .core-team-photo {
     height: 360px;
+  }
+
+  /* Center Member 5 */
+  .core-team-card:nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 12px);
   }
 }
 
@@ -849,6 +864,13 @@ h2 { font-size: clamp(34px, 4.3vw, 52px); line-height: 1.14; margin-bottom: 22px
     padding: 23px;
   }
 
+  /* Member 5 uses the same width as other cards */
+  .core-team-card:nth-child(5) {
+    grid-column: auto;
+    justify-self: stretch;
+    width: 100%;
+  }
+
   .core-team-footer {
     gap: 9px;
     margin-top: 32px;
@@ -862,27 +884,6 @@ h2 { font-size: clamp(34px, 4.3vw, 52px); line-height: 1.14; margin-bottom: 22px
   .core-team-footer p {
     font-size: 9px;
     letter-spacing: 1px;
-  }
-}
-
-/* Tablet */
-@media (max-width: 1000px) {
-  .about-founder-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 24px;
-  }
-
-  .about-founder-grid .founder-message {
-    padding: 20px;
-  }
-
-  .about-founder-grid .founder-profile {
-    grid-template-columns: minmax(95px, 0.7fr) minmax(0, 1fr);
-    gap: 14px;
-  }
-
-  .about-founder-grid .founder-photo {
-    height: 180px;
   }
 }
 
