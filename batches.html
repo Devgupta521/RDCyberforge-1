@@ -37,6 +37,14 @@
     .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 850; letter-spacing: -.04em; font-size: clamp(1.1rem, 2.8vw, 1.55rem); }
     .brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border: 2px solid var(--blue); color: var(--blue); font-weight: 900; clip-path: polygon(50% 0, 94% 18%, 94% 70%, 50% 100%, 6% 70%, 6% 18%); }
+    .brand-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
     .brand span span { color: var(--blue); }
     .nav-links { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: .92rem; }
@@ -111,10 +119,16 @@
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="index.html" aria-label="RD CyberForge home">
-        <span class="brand-mark" aria-hidden="true">RD</span>
-        <span>RD<span>CyberForge</span></span>
-      </a>
+      
+<a class="brand" href="index.html" aria-label="RD CyberForge home">
+  <img
+    src="/logo.jpeg"
+    alt="RD CyberForge Logo"
+    class="brand-logo"
+  >
+  <span>RD<span>CyberForge</span></span>
+</a>
+
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="#batches">Batches</a>
