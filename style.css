@@ -4014,24 +4014,32 @@ button:focus-visible {
   justify-content: center;
   gap: 55px;
   padding: 45px 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .partner-logo {
-  flex: 1;
+  flex: 0 1 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   max-width: 270px;
 }
 
 .partner-logo img {
+  display: block;
   width: 125px;
   height: 125px;
-  object-fit: center;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
   padding: 10px;
   border-radius: 18px;
   background: rgba(255,255,255,0.06);
   border: 1px solid var(--border);
 }
-
 .partner-logo h3 {
   color: var(--text);
   font-family: var(--font-heading);
