@@ -4025,7 +4025,7 @@ button:focus-visible {
 .partner-logo img {
   width: 125px;
   height: 125px;
-  object-fit: contain;
+  object-fit: center;
   padding: 10px;
   border-radius: 18px;
   background: rgba(255,255,255,0.06);
